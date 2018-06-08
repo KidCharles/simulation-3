@@ -20,9 +20,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Secrets 
-config.js
 
 
-
-.env 
+.env
