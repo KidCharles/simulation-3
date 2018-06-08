@@ -103,8 +103,11 @@ app.use(session({
 
 app.use(checkUserSession)
 
+
+app.get('/posts', ctrl.getPost)
 app.post('/login', ctrl.loginUser)
 app.post('/register', ctrl.registerUser)
+
 
 
 

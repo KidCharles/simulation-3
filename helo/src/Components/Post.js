@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Nav from './Nav';
+import './Dash.css'
 
 class Post extends Component {
     constructor(props) {
@@ -15,8 +16,11 @@ class Post extends Component {
 
     render() {
         return (
-            <div>Post
-                <Nav/>
+            <div className="post" >
+                Post
+                <p>title</p>
+                <p>authorname</p>
+                <p>prof pic</p>
             </div>
         )
     }
