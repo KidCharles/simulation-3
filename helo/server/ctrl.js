@@ -45,8 +45,12 @@ module.exports = {
         })
     },
 
-    getPost: (req, res) => {
-        
+    addPost: (req, res) => {
+        const db = req.app.get('db');
+        const {user_id} = req.body
+        db.add_post([user_id])
+            .then(post => res.status(200).send(houses))
+            .catch(() => res.status(500).send())
     }
 
 }

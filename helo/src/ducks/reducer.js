@@ -2,7 +2,10 @@
 const initial_state = {
     username: '',
     profile_pic: '',
-    userId: 0
+    userId: 0,
+    img:'',
+    title:'',
+    content:''
 }
 
 // 2.) CONST VARIABLES

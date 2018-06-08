@@ -13,6 +13,10 @@ class Dashboard extends Component {
         }
     }
 
+    componentDidMount(){
+        
+    }
+
     handleChange(val) {
         this.setState({ search: val })
     }
@@ -39,6 +43,7 @@ class Dashboard extends Component {
         })
         return (
             <div >
+                <Nav />
                 <div>
                     <input onChange={(e) => this.handleChange(e.target.value)} value={this.state.search}/>
                     <button onClick={() => this.handleSearch()} >Search</button>
@@ -48,7 +53,7 @@ class Dashboard extends Component {
                 </div>
                 <Post/>
                 {mappedPost}
-                <Nav />
+                
             </div>
         )
     }
